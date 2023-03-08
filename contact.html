@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js"></script>
+</head>
+
+    <body>
+        <div class="container"> 
+            <header> <!-- sticky header -->
+                <a href="#" class="logo">Murray</a>
+                <nav> <!-- 100vh, this is the green background menu -->
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" width="33.514" height="32.674" viewBox="0 0 33.514 32.674">
+                        <path id="Path_72" data-name="Path 72" d="M30.194,6.472,16.757,0,3.319,6.472,0,21.013,9.3,32.674H24.214l9.3-11.661ZM23.767,22.259a1.5,1.5,0,1,1-2.121,2.121l-4.889-4.89-4.889,4.89a1.5,1.5,0,1,1-2.122-2.121l4.89-4.89L9.746,12.48a1.5,1.5,0,1,1,2.122-2.121l4.889,4.889,4.889-4.889a1.5,1.5,0,0,1,2.121,2.121l-4.889,4.889Z"/>
+                    </svg>           
+                    <ul>
+                        <li><a class="current" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a class="last" href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-button">Contact Us</a> 
+                <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.333 55.471">
+                    <g id="Group_44" data-name="Group 44" transform="translate(-2327 330)">
+                    <path id="Path_78" data-name="Path 78" d="M29.735,19.552V6.182A6.189,6.189,0,0,1,35.918,0H49.287A6.189,6.189,0,0,1,55.47,6.182v13.37a6.191,6.191,0,0,1-6.183,6.184H35.918a6.191,6.191,0,0,1-6.183-6.184M52.47,6.182A3.186,3.186,0,0,0,49.287,3H35.918a3.186,3.186,0,0,0-3.183,3.182v13.37a3.188,3.188,0,0,0,3.183,3.184H49.287a3.188,3.188,0,0,0,3.183-3.184Z" transform="translate(2327 -330)"/>
+                    <path id="Path_79" data-name="Path 79" d="M19.552,0H6.183A6.189,6.189,0,0,0,0,6.182v13.37a6.191,6.191,0,0,0,6.183,6.184H19.552a6.191,6.191,0,0,0,6.183-6.184V6.182A6.189,6.189,0,0,0,19.552,0" transform="translate(2327 -330)"/>
+                    <path id="Path_80" data-name="Path 80" d="M50.151,29.735H36.782A6.188,6.188,0,0,0,30.6,35.917v13.37a6.191,6.191,0,0,0,6.183,6.184H50.151a6.19,6.19,0,0,0,6.182-6.184V35.917a6.188,6.188,0,0,0-6.182-6.182" transform="translate(2327 -330)"/>
+                    <path id="Path_81" data-name="Path 81" d="M0,49.287V35.917a6.189,6.189,0,0,1,6.183-6.182H19.552a6.189,6.189,0,0,1,6.183,6.182v13.37a6.191,6.191,0,0,1-6.183,6.184H6.183A6.191,6.191,0,0,1,0,49.287m22.735-13.37a3.186,3.186,0,0,0-3.183-3.182H6.183A3.186,3.186,0,0,0,3,35.917v13.37a3.188,3.188,0,0,0,3.183,3.184H19.552a3.188,3.188,0,0,0,3.183-3.184Z" transform="translate(2327 -330)"/>
+                    </g>
+                </svg>
+                
+            </header>
+            <div class="contact-wrapper">    
+            </div>
+
+
+            <p id="demo">A paragraph.</p>
+            <button type="button" onclick="myFunction()">Try it</button>
+            
+
+
+
+
+        </div>
+
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+            
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+            
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+        </script>
+    </body>
+</html>
